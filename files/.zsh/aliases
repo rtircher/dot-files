@@ -7,9 +7,8 @@ else
 fi
 
 alias l='ls'
-alias ll='ls -lh'
+alias ll='ls -lha'
 alias la='ls -a'
-alias lal='ls -lah'
 
 alias s='git status -sb $argv; return 0'
 alias d='gd $argv'
