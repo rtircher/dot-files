@@ -1,9 +1,14 @@
 project_pwd() {
-  echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/projects\/\([^\/]*\)\/current/\\1/" -e "s/~\/Sites\/\([^\/]*\)\/current/http:\/\/\\1/"
+  echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/Development\/\([^\/]*\)/\\1/"
+}
+
+function rvm_prompt_info() {
+  ruby_version=$(~/.rvm/bin/rvm-prompt 2> /dev/null) || return
+  print "($ruby_version)"
 }
 
 ruby_version() {
-  echo " $(ruby -v | awk '{print $2}')"
+  print " $(rvm_prompt_info)"
 }
 
 export PROMPT=$'%{\e[0;90m%}%n@%m%{\e[0m%}
