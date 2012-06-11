@@ -1,2 +1,6 @@
 .DS_Store
-.rbx/
+*.cache
+*.log
+*.pid
+.bundle/
+vendor/cache/
