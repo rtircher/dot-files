@@ -51,7 +51,7 @@ alias gs='git show'
 alias gs.='git show --color-words="."'
 alias gst='git stash'
 alias gstp='git stash pop'
-alias gup='git smart-pull'
+alias gpr='git pull --rebase'
 gupstation() {
   gup
   gf production

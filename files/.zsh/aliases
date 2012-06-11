@@ -12,7 +12,6 @@ alias la='ls -a'
 
 alias s='git status -sb $argv; return 0'
 alias d='gd $argv'
-alias m='mate . $argv'
 
 alias df='df -kh $argv'
 alias reload_webkit='osascript -e 'tell application "WebKit" to do JavaScript "window.location.reload()" in front document''
@@ -22,5 +21,5 @@ alias rs="bundle exec rake spec"
 
 alias rake="noglob rake"
 
-alias add_alias='mate -w ~/.zsh/aliases; cd ~/.dot-files; ga files/.zsh/aliases; gc'
-alias git_alias='mate -w ~/.zsh/git_aliases; cd ~/.dot-files; ga files/.zsh/git_aliases; gc'
+alias dev="cd /Users/rtircher/Development"
+alias annai="cd /Users/rtircher/Development/Annai"
