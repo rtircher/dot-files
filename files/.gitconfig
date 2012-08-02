@@ -22,6 +22,6 @@
 [alias]
         st = status
 [core]
-        excludesfile = .gitignore
+	excludesfile = ~/.gitignore
 [github]
         user = rtircher
