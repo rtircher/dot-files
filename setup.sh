@@ -32,7 +32,7 @@ cd emacs_install/emacs-24.1
 if [[ $? != 0 ]]; then
   mv nextstep/Emacs.app/Contents/Resources/Emacs.icns nextstep/Emacs.app/Contents/Resources/Emacs.old.icns
   cp ../../bin/Emacs.icns nextstep/Emacs.app/Contents/Resources/
-  cp -r nextstep/Emacs.app /Developer/Applications/
+  cp -r nextstep/Emacs.app /Applications/
   echo "Emacs installed successfully"
 fi
 cd ../../
