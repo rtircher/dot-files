@@ -14,12 +14,13 @@ alias s='git status -sb $argv; return 0'
 alias d='gd $argv'
 
 alias df='df -kh $argv'
-alias reload_webkit='osascript -e 'tell application "WebKit" to do JavaScript "window.location.reload()" in front document''
-alias tigs='tig status $argv'
+
+alias be="bundle exec"
 
 alias rs="bundle exec rake spec"
 
 alias rake="noglob rake"
+alias brake="noglob bundle exec rake"
 
 alias dev="cd /Users/rtircher/Development"
 alias annai="cd /Users/rtircher/Development/Annai"
