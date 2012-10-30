@@ -27,3 +27,5 @@
         user = rtircher
 [branch]
 	autosetupmerge = true
+[push]
+	default = simple
