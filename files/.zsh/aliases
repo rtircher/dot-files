@@ -23,4 +23,3 @@ alias rake="noglob rake"
 alias brake="noglob bundle exec rake"
 
 alias dev="cd /Users/rtircher/Development"
-alias annai="cd /Users/rtircher/Development/Annai"
