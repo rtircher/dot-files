@@ -8,7 +8,7 @@ ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
 done
 
 if [ ! `which brew` ]; then
-  echo "Installing homebrew"
+  echo "--> installing homebrew"
   ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 else
   echo "Homebrew already installed -- skipping"
@@ -17,12 +17,12 @@ fi
 if [[ $? != 0 ]]; then
   echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
 else
-  echo "--> Installing brew packages"
+  echo "--> installing brew packages"
   brew install ack node zsh aspell git tree
 fi
 
 if [ ! `which rvm` ]; then
-  echo "--> Installing RVM"
+  echo "--> installing RVM"
   curl -L get.rvm.io | bash -s stable --ruby
 
   if [[ $? != 0 ]]; then
@@ -32,7 +32,7 @@ else
   echo "RVM already installed -- skipping"
 fi
 
-echo "#### Installing emacs"
+echo "--> installing emacs"
 mkdir emacs_install
 tar -xvf bin/emacs-24.1.tar.gz -C emacs_install
 cd emacs_install/emacs-24.1
