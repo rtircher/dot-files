@@ -7,8 +7,12 @@ ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
   ln -vsf "$f" ~
 done
 
-echo "Installing brew"
-/usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
+if [ ! `which brew` ]; then
+  echo "Installing homebrew"
+  ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+else
+  echo "Homebrew already installed -- skipping"
+fi
 
 if [[ $? != 0 ]]; then
   echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
