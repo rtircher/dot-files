@@ -21,11 +21,15 @@ else
   brew install ack node zsh aspell git tree
 fi
 
-echo "--> Installing RVM"
-curl -L get.rvm.io | bash -s stable --ruby
+if [ ! `which rvm` ]; then
+  echo "--> Installing RVM"
+  curl -L get.rvm.io | bash -s stable --ruby
 
-if [[ $? != 0 ]]; then
-  echo "!!!!!!!!!! RVM install failed !!!!!!!!!!"
+  if [[ $? != 0 ]]; then
+    echo "!!!!!!!!!! RVM install failed !!!!!!!!!!"
+  fi
+else
+  echo "RVM already installed -- skipping"
 fi
 
 echo "#### Installing emacs"
