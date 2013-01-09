@@ -18,7 +18,7 @@ if [[ $? != 0 ]]; then
   echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
 else
   echo "--> Installing brew packages"
-  brew install ack emacs leiningen node zsh aspell git tree
+  brew install ack node zsh aspell git tree
 fi
 
 echo "--> Installing RVM"
