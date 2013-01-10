@@ -33,15 +33,23 @@ else
 fi
 
 echo "--> installing emacs"
-mkdir emacs_install
-tar -xvf bin/emacs-24.1.tar.gz -C emacs_install
-cd emacs_install/emacs-24.1
-./configure --with-ns && make install
-if [[ $? != 0 ]]; then
-  mv nextstep/Emacs.app/Contents/Resources/Emacs.icns nextstep/Emacs.app/Contents/Resources/Emacs.old.icns
-  cp ../../bin/Emacs.icns nextstep/Emacs.app/Contents/Resources/
-  cp -r nextstep/Emacs.app /Applications/
-  echo "Emacs installed successfully"
-fi
-cd ../../
-rm -rf emacs_install
+brew install emacs --cocoa --srgb --keep-ctag
+
+EMACS_BIN="/usr/local/bin/`readlink /usr/local/bin/emacs`"
+EMACS_HOME="`dirname $EMACS_BIN`/.."
+EMACS_APP="$EMACS_HOME/Emacs.app"
+
+echo "  changing emacs icon"
+mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
+cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
+
+echo "  linking emacs app"
+ln -svf $EMACS_APP /Applications
+
+echo "  linking emacs for command line access"
+sudo mv /usr/bin/emacs /usr/bin/emacs.old
+sudo ln -svf /usr/local/bin/emacs /usr/bin/emacs
+sudo mv /usr/bin/emacsclient /usr/bin/emacsclient.old
+sudo ln -svf /usr/local/bin/emacsclient /usr/bin/emacsclient
+
+echo "Emacs installed successfully"
