@@ -1,13 +1,6 @@
 #!/usr/local/bin/zsh
 # -*- coding: utf-8 -*-
 
-local RED="%{\e[31m%}"
-local GREY="%{\e[90m%}"
-local BLUE="%{\e[34m%}"
-local YELLOW="%{\e[33m%}"
-
-local RESET="%{\e[0m%}"
-
 local git_repo_path=$(git rev-parse --git-dir 2>/dev/null)
 
 function in_git_repo() {
@@ -17,7 +10,7 @@ function in_git_repo() {
 function git_parse_branch() {
   local branch_name=$(cat $git_repo_path/HEAD | grep -Eo "refs/heads/(.*)" | cut -d/ -f3)
   if [[ -z $branch_name ]]; then
-    print "${RED}no branch"
+    print "${color_red}no branch"
   else
     print $branch_name
   fi
@@ -29,7 +22,7 @@ function git_head_commit_id() {
 
 function git_cwd_dirty() {
   if in_git_repo && [[ -n `git ls-files -m` ]]; then
-    echo " ${GREY}✗${RESET}"
+    echo " ${color_gray}✗${color_none}"
   fi
 }
 
@@ -47,5 +40,5 @@ function rebasing_etc() {
 }
 
 if in_git_repo; then
-  print "${BLUE}$(git_parse_branch)${GREY}@${YELLOW}$(git_head_commit_id)%{\e[0m%}$(rebasing_etc)$(git_cwd_dirty)"
+  print "${color_blue}$(git_parse_branch)${color_gray}@${color_yellow}$(git_head_commit_id)%{\e[0m%}$(rebasing_etc)$(git_cwd_dirty)${color_none}"
 fi
