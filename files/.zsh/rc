@@ -1,6 +1,7 @@
 setopt prompt_subst
 setopt hist_ignore_dups
 
+. ~/.zsh/colors
 . ~/.zsh/prompt
 . ~/.zsh/aliases
 . ~/.zsh/git_aliases
