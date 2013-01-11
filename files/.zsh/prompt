@@ -4,11 +4,16 @@ function project_pwd() {
 
 function rvm_prompt_info() {
   ruby_version=$(~/.rvm/bin/rvm-prompt 2> /dev/null) || return
-  print "($ruby_version)"
+  print "$ruby_version"
 }
 
 function ruby_version() {
-  print " $(rvm_prompt_info)"
+  ruby_version=$(rvm_prompt_info)
+  if [ -z $ruby_version ] ; then
+     print " $color_red(system ruby)$color_none"
+  else
+     print " ($ruby_version)"
+  fi
 }
 
 export PROMPT=$'%{\e[0;90m%}%n@%m%{\e[0m%}
