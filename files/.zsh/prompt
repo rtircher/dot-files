@@ -1,4 +1,4 @@
-project_pwd() {
+function project_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/Development\/\([^\/]*\)/\\1/"
 }
 
@@ -7,7 +7,7 @@ function rvm_prompt_info() {
   print "($ruby_version)"
 }
 
-ruby_version() {
+function ruby_version() {
   print " $(rvm_prompt_info)"
 }
 
