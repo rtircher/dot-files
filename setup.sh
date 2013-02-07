@@ -1,5 +1,7 @@
 #!/bin/bash
 
+RET_CODE=0
+
 ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
   [ "$f" == `pwd`/files/. ] ||
   [ "$f" == `pwd`/files/.. ] ||
@@ -7,49 +9,55 @@ ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
   ln -vsf "$f" ~
 done
 
-if [ ! `which brew` ]; then
+source osx_config.sh
+
+if [ $RET_CODE == 0 ] && [ ! `which brew` ]; then
   echo "--> installing homebrew"
   ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+  RET_CODE=$?
 else
   echo "Homebrew already installed -- skipping"
 fi
 
-if [[ $? != 0 ]]; then
-  echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
-else
+if [ $RET_CODE == 0 ]; then
   echo "--> installing brew packages"
   brew install ack node zsh aspell git tree
+else
+  echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
 fi
 
-if [ ! `which rvm` ]; then
+if  [ $RET_CODE == 0 ] && [ ! `which rvm` ]; then
   echo "--> installing RVM"
   curl -L get.rvm.io | bash -s stable --ruby
+  RET_CODE=$?
 
-  if [[ $? != 0 ]]; then
+  if [ $RET_CODE != 0 ]; then
     echo "!!!!!!!!!! RVM install failed !!!!!!!!!!"
   fi
 else
   echo "RVM already installed -- skipping"
 fi
 
-echo "--> installing emacs"
-brew install emacs --cocoa --srgb --keep-ctag
+if  [ $RET_CODE == 0 ]; then
+  echo "--> installing emacs"
+  brew install emacs --cocoa --srgb --keep-ctag
 
-EMACS_BIN="/usr/local/bin/`readlink /usr/local/bin/emacs`"
-EMACS_HOME="`dirname $EMACS_BIN`/.."
-EMACS_APP="$EMACS_HOME/Emacs.app"
+  EMACS_BIN="/usr/local/bin/`readlink /usr/local/bin/emacs`"
+  EMACS_HOME="`dirname $EMACS_BIN`/.."
+  EMACS_APP="$EMACS_HOME/Emacs.app"
 
-echo "  changing emacs icon"
-mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
-cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
+  echo "  changing emacs icon"
+  mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
+  cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
 
-echo "  linking emacs app"
-ln -svf $EMACS_APP /Applications
+  echo "  linking emacs app"
+  ln -svf $EMACS_APP /Applications
 
-echo "  linking emacs for command line access"
-sudo mv /usr/bin/emacs /usr/bin/emacs.old
-sudo ln -svf /usr/local/bin/emacs /usr/bin/emacs
-sudo mv /usr/bin/emacsclient /usr/bin/emacsclient.old
-sudo ln -svf /usr/local/bin/emacsclient /usr/bin/emacsclient
+  echo "  linking emacs for command line access"
+  sudo mv /usr/bin/emacs /usr/bin/emacs.old
+  sudo ln -svf /usr/local/bin/emacs /usr/bin/emacs
+  sudo mv /usr/bin/emacsclient /usr/bin/emacsclient.old
+  sudo ln -svf /usr/local/bin/emacsclient /usr/bin/emacsclient
 
-echo "Emacs installed successfully"
+  echo "Emacs installed successfully"
+fi
