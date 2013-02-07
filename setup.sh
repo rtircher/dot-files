@@ -9,8 +9,6 @@ ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
   ln -vsf "$f" ~
 done
 
-source osx_config.sh
-
 if [ $RET_CODE == 0 ] && [ ! `which brew` ]; then
   echo "--> installing homebrew"
   ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
@@ -61,3 +59,6 @@ if  [ $RET_CODE == 0 ]; then
 
   echo "Emacs installed successfully"
 fi
+
+echo "Don't forget to run the following command to configure MacOS X"
+echo "source osx_config.sh"
