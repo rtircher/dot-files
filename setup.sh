@@ -60,5 +60,11 @@ if  [ $RET_CODE == 0 ]; then
   echo "Emacs installed successfully"
 fi
 
-echo "Don't forget to run the following command to configure MacOS X"
+if [ $RET_CODE == 0]; then
+  echo "--> installing Slate window mager"
+  cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+  open Slate.app
+fi
+
+echo "don't forget to run the following command to configure MacOS X"
 echo "source osx_config.sh"
