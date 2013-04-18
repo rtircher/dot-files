@@ -1,6 +1,7 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
+config checkDefaultsOnLoad true
 
 # Resize Bindings
 bind right:alt       resize +10% +0
