@@ -29,3 +29,5 @@
 	autosetupmerge = true
 [push]
 	default = tracking
+[help]
+	autocorrect = 1
