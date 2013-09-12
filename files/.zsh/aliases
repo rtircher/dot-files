@@ -23,3 +23,5 @@ alias rake="noglob rake"
 alias brake="noglob bundle exec rake"
 
 alias vs="vagrant ssh --"
+
+alias t='title'
