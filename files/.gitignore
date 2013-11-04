@@ -7,3 +7,5 @@ vendor/cache/
 *.iml
 .idea/
 .vagrant/
+*.ipr
+*.iws
