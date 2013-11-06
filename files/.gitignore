@@ -9,3 +9,5 @@ vendor/cache/
 .vagrant/
 *.ipr
 *.iws
+/bin/
+
