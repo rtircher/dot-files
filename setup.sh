@@ -68,5 +68,10 @@ if [ $RET_CODE == 0 ]; then
   popd &> /dev/null
 fi
 
+if [ $RET_CODE == 0 ]; then
+  echo "Changing shel to zsh"
+  chsh -s /bin/zsh $USER
+end
+
 echo "don't forget to run the following command to configure MacOS X"
 echo "source osx_config.sh"
