@@ -48,8 +48,8 @@ if  [ $RET_CODE == 0 ]; then
   mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
   cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
 
-  echo "  linking emacs app"
-  ln -svf $EMACS_APP /Applications
+  echo "  copying emacs to /Applications"
+  cp -r $EMACS_APP /Applications/Emacs.app
 
   echo "  linking emacs for command line access"
   sudo mv /usr/bin/emacs /usr/bin/emacs.old
