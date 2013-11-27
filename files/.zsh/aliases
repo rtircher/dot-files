@@ -22,6 +22,8 @@ alias rs="bundle exec rake spec"
 alias rake="noglob rake"
 alias brake="noglob bundle exec rake"
 
-alias vs="vagrant ssh --"
+alias vu="vagrant up"
+alias vp="vagrant provision"
+alias vs="vagrant ssh"
 
 alias t='title'
