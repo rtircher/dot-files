@@ -52,6 +52,7 @@ alias gs.='git show --color-words="."'
 alias gst='git stash'
 alias gstp='git stash pop'
 alias gpr='git pull --rebase'
+alias gpsu='git push --set-upstream'
 alias gsr='git svn rebase'
 gupstation() {
   gup
