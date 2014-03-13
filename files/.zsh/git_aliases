@@ -60,3 +60,5 @@ gupstation() {
   gf staging
 }
 alias graf='git remote add $argv[1] $argv[2] && gf $argv[1]'
+
+alias gprune='git remote prune origin'
