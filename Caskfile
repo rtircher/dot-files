@@ -1,0 +1,35 @@
+# Install cask
+tap caskroom/cask
+install brew-cask
+
+# Quick Look plugins
+cask install qlcolorcode
+cask install qlmarkdown
+cask install quicklook-json
+cask install quicklook-csv
+cask install betterzipql
+
+# Color Picker plugins
+cask install colorpicker-hex
+
+# Apps
+cask install iterm2
+cask install sequel-pro
+cask install sourcetree
+cask install alfred
+cask install caffeine
+cask install dropbox
+cask install firefox
+cask install fluid
+cask install flux
+cask install google-chrome
+cask install notational-velocity
+cask install mou
+cask install netshade
+cask install skype
+cask install slack
+cask install slate
+cask install sublime-text
+cask install virtualbox
+cask install vlc
+cask install vagrant

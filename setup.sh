@@ -19,7 +19,7 @@ fi
 
 if [ $RET_CODE == 0 ]; then
   echo "--> installing brew packages"
-  brew install ack node zsh aspell git tree
+  brew bundle Brewfile
 else
   echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
 fi
@@ -71,7 +71,12 @@ fi
 if [ $RET_CODE == 0 ]; then
   echo "Changing shel to zsh"
   chsh -s /bin/zsh $USER
-end
+fi
+
+if [ $RET_CODE == 0 ]; then
+  echo "--> installing cask packages"
+  brew bundle Caskfile
+fi
 
 echo "don't forget to run the following command to configure MacOS X"
 echo "source osx_config.sh"
