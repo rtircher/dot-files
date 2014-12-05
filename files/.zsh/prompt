@@ -1,5 +1,5 @@
 function project_pwd() {
-  echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/Development\/\([^\/]*\)/\\1/"
+  echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/Development\/\([^\/]*\)/\\1/" -e "s/\/Development\/\([^\/]*\)/\\1/"
 }
 
 function rvm_prompt_info() {
