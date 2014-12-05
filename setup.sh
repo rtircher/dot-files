@@ -61,14 +61,6 @@ if  [ $RET_CODE == 0 ]; then
 fi
 
 if [ $RET_CODE == 0 ]; then
-  echo "--> installing Slate window mager"
-  pushd /Applications &> /dev/null
-  curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
-  open Slate.app
-  popd &> /dev/null
-fi
-
-if [ $RET_CODE == 0 ]; then
   echo "Changing shel to zsh"
   chsh -s /bin/zsh $USER
 fi
