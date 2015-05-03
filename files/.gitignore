@@ -10,4 +10,4 @@ vendor/cache/
 *.ipr
 *.iws
 /bin/
-
+/venv/
