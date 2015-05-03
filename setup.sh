@@ -11,7 +11,7 @@ done
 
 if [ $RET_CODE == 0 ] && [ ! `which brew` ]; then
   echo "--> installing homebrew"
-  ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   RET_CODE=$?
 else
   echo "Homebrew already installed -- skipping"
@@ -19,7 +19,7 @@ fi
 
 if [ $RET_CODE == 0 ]; then
   echo "--> installing brew packages"
-  brew bundle Brewfile
+  source Brewfile
 else
   echo "!!!!!!!!!! Brew install failed !!!!!!!!!!"
 fi
@@ -67,7 +67,8 @@ fi
 
 if [ $RET_CODE == 0 ]; then
   echo "--> installing cask packages"
-  brew bundle Caskfile
+  brew install caskroom/cask/brew-cask
+  source Caskfile
 fi
 
 echo "don't forget to run the following command to configure MacOS X"
