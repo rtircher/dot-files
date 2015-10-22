@@ -48,3 +48,12 @@ zle -N self-insert-backslash
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# Go stuffs
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Development/go_workspace
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN:$GOROOT/bin
