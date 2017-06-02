@@ -30,3 +30,5 @@ alias vs="vagrant ssh"
 alias t='title'
 
 alias vsc='open -a "Visual Studio Code"'
+
+alias stree='open -a SourceTree .'
