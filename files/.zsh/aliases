@@ -28,3 +28,5 @@ alias vp="vagrant provision"
 alias vs="vagrant ssh"
 
 alias t='title'
+
+alias vsc='open -a "Visual Studio Code"'

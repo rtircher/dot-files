@@ -55,6 +55,7 @@ alias gstp='git stash pop'
 alias gpr='git pull --rebase'
 alias grom='g fetch origin master && git rebase origin/master'
 alias gpsu='git push --set-upstream'
+alias gpsuo='git push --set-upstream origin'
 alias gsr='git svn rebase'
 gupstation() {
   gup
