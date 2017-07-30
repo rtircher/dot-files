@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabSize": 2,
+    "editor.roundedSelection": false,
+    "files.trimTrailingWhitespace": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "go.formatOnSave": true,
+    "go.formatTool": "goreturns",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "node_modules": true
+    },
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "workbench.iconTheme": "vs-seti"
+}
