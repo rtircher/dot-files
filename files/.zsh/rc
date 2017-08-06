@@ -9,9 +9,9 @@ setopt hist_ignore_dups
 . ~/.zsh/vendor/rupa-z/z.sh
 
 if [ $(uname -s) = 'Darwin' ]; then
-  export LANG="en_AU.UTF-8"
-  export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
-  export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
+  export LANG="en_US.UTF-8"
+  export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+#  export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
 else
   export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 fi
@@ -49,11 +49,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # Go stuffs
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Development/go_workspace
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN:$GOROOT/bin
+
