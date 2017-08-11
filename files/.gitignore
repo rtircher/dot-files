@@ -11,3 +11,4 @@ vendor/cache/
 *.iws
 /bin/
 /venv/
+.vscode/
