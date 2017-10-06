@@ -23,11 +23,9 @@ brew cask install fluid
 brew cask install flux
 brew cask install google-chrome
 brew cask install notational-velocity
-brew cask install mou
 brew cask install netshade
 brew cask install skype
 brew cask install slack
-brew cask install sublime-text
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vagrant

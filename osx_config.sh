@@ -140,7 +140,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
@@ -493,8 +493,8 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 ###############################################################################
 
 # Allow installing user scripts via GitHub or Userscripts.org
-defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
-defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
+# defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
+# defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 
 ###############################################################################
 # SizeUp.app                                                                  #
@@ -560,13 +560,10 @@ apps=("Address Book"
     "Dashboard"
     "Dock"
     "Finder"
-	  "Mail"
+	"Mail"
     "Safari"
-    # "SizeUp"
     "SystemUIServer"
     "Terminal"
-    # "Transmission"
-	  # "Twitter"
     "iCal"
     "iTunes")
 

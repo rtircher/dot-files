@@ -3,4 +3,3 @@ brew install node
 brew install zsh
 brew install aspell
 brew install git
-brew install tree
