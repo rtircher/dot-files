@@ -29,3 +29,4 @@ brew cask install slack
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vagrant
+brew cask install visual-studio-code

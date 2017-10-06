@@ -71,5 +71,12 @@ if [ $RET_CODE == 0 ]; then
   source Caskfile
 fi
 
+if [ $RET_CODE == 0 ]; then
+  echo "  link Visual Studio Code config"
+  ls -1dA `pwd`/vsc/* | while read f; do
+    ln -vsf "$f" "$HOME/Library/Application Support/Code/User"
+  done
+fi
+
 echo "don't forget to run the following command to configure MacOS X"
 echo "source osx_config.sh"
