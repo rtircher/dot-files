@@ -78,5 +78,10 @@ if [ $RET_CODE == 0 ]; then
   done
 fi
 
+if [ $RET_CODE == 0 ]; then
+  echo "  link iTerm2 config"
+  ln -vsf "`pwd`/iterm2/dynamic-profiles.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
+fi
+
 echo "don't forget to run the following command to configure MacOS X"
 echo "source osx_config.sh"
