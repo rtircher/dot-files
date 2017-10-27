@@ -18,6 +18,14 @@
     "files.associations": {
         "*.vue": "vue"
     },
+    "ruby.lint": {
+        "reek": true,
+        "rubocop": true,
+        "ruby": true, //Runs ruby -wc
+        "fasterer": true,
+        "debride": true,
+        "ruby-lint": true
+    },
     "workbench.iconTheme": "vs-seti",
     "window.zoomLevel": 0
 }
