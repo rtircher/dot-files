@@ -27,5 +27,6 @@
         "ruby-lint": true
     },
     "workbench.iconTheme": "vs-seti",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "alt"
 }
