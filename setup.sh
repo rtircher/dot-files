@@ -60,6 +60,22 @@ ls -1dA `pwd`/vsc/* | while read f; do
   ln -vsf "$f" "$HOME/Library/Application Support/Code/User"
 done
 
+EXTENSIONS=(
+  "HookyQR.beautify" \
+  "dbaeumer.vscode-eslint" \
+  "eamodio.gitlens" \
+  "esbenp.prettier-vscode" \
+  "karunamurti.haml" \
+  "lukehoban.Go" \
+  "michelemelluso.code-beautifier" \
+  "octref.vetur" \
+  "rebornix.Ruby" \
+  "taichi.react-beautify"
+)
+echo "  Installing VS Code extensions"
+for EXTENSION in ${EXTENSIONS[@]}; do
+  code --install-extension $EXTENSION
+done
 
 echo "--> link iTerm2 config"
 ln -vsf "`pwd`/iterm2/dynamic-profiles.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
