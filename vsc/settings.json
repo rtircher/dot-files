@@ -3,6 +3,8 @@
     "editor.tabSize": 2,
     "editor.roundedSelection": false,
     "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.multiCursorModifier": "alt",
     "files.trimTrailingWhitespace": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -12,8 +14,7 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": true,
-        "node_modules": true
+        "**/.DS_Store": true
     },
     "files.associations": {
         "*.vue": "vue"
@@ -28,5 +29,6 @@
     },
     "workbench.iconTheme": "vs-seti",
     "window.zoomLevel": 0,
-    "editor.multiCursorModifier": "alt"
+    "prettier.printWidth": 110,
+    "prettier.singleQuote": true
 }
