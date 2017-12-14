@@ -1,6 +1,5 @@
 # Install cask
 brew tap caskroom/cask
-brew install brew-cask
 
 # Quick Look plugins
 brew cask install qlcolorcode
@@ -8,9 +7,6 @@ brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install quicklook-csv
 brew cask install betterzipql
-
-# Color Picker plugins
-brew cask install colorpicker-hex
 
 # Apps
 brew cask install iterm2

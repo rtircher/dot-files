@@ -52,7 +52,6 @@ echo "--> Changing shel to zsh"
 chsh -s /bin/zsh $USER
 
 echo "--> installing cask packages"
-brew install caskroom/cask/brew-cask
 source Caskfile
 
 echo "--> link Visual Studio Code config"
