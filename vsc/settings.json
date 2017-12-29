@@ -39,6 +39,10 @@
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true,
+        "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
-    }
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "editor.formatOnSave": true
 }

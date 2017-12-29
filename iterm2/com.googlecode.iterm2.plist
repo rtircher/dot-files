@@ -139,13 +139,15 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 477 620 392 0 0 1680 1027 </string>
+	<string>970 769 620 392 0 0 2560 1417 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>2829 126 606 469 2560 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3187 623 918 381 2560 0 2560 1417 </string>
+	<string>627 649 1018 447 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1680 1023 0 0 1680 1027 </string>
+	<string>1640 -356 1680 1023 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>343 181 585 452 0 0 2560 1417 </string>
+	<string>2903 185 585 452 2560 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1448,6 +1450,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/rtircher/Development/dot-files/iterm2</string>
+	<key>RunJobsInServers</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1457,13 +1461,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-09T22:57:27Z</date>
+	<date>2017-11-30T20:01:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SuppressRestartAnnouncement</key>
+	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.3</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
