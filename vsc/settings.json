@@ -8,7 +8,6 @@
     "files.trimTrailingWhitespace": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "go.formatOnSave": true,
     "go.formatTool": "goreturns",
     "files.exclude": {
         "**/.git": true,
@@ -38,11 +37,8 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
-        "suppressUpdateNotice": false,
-        "suppressWelcomeNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
     },
-    "workbench.editor.tabSizing": "shrink",
-    "editor.formatOnSave": true
+    "workbench.editor.tabSizing": "shrink"
 }
