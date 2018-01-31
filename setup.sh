@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -e -u
 
 ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
   [ "$f" == `pwd`/files/. ] ||
@@ -40,23 +40,23 @@ cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
 echo "  copying emacs to /Applications"
 cp -r $EMACS_APP /Applications/Emacs.app
 
-echo "  linking emacs for command line access"
-sudo mv /usr/bin/emacs /usr/bin/emacs.old
-sudo ln -svf /usr/local/bin/emacs /usr/bin/emacs
-sudo mv /usr/bin/emacsclient /usr/bin/emacsclient.old
-sudo ln -svf /usr/local/bin/emacsclient /usr/bin/emacsclient
-
 echo "Emacs installed successfully"
 
 echo "--> Changing shel to zsh"
-chsh -s /bin/zsh $USER
+if [ "$SHELL" == '/bin/zsh' ]; then
+  echo "Already using zsh -- shipping"
+else
+  chsh -s /bin/zsh $USER
+fi
 
 echo "--> installing cask packages"
 source Caskfile
 
 echo "--> link Visual Studio Code config"
+VSC_SUPPORT_DIR="$HOME/Library/Application Support/Code/User"
+mkdir -p "$VSC_SUPPORT_DIR"
 ls -1dA `pwd`/vsc/* | while read f; do
-  ln -vsf "$f" "$HOME/Library/Application Support/Code/User"
+  ln -vsf "$f" "$VSC_SUPPORT_DIR"
 done
 
 EXTENSIONS=(

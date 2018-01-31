@@ -6,7 +6,8 @@ brew cask install qlcolorcode
 brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install quicklook-csv
-brew cask install betterzipql
+brew cask install betterzip
+brew cask install qlstephen # preview file without extensions as text files
 
 # Apps
 brew cask install iterm2
@@ -22,7 +23,9 @@ brew cask install notational-velocity
 brew cask install netshade
 brew cask install skype
 brew cask install slack
+brew cask install spectacle
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vagrant
 brew cask install visual-studio-code
+brew cask install docker
