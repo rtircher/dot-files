@@ -2,12 +2,16 @@
 
 set -e -u
 
-ls -1dA `pwd`/files/* `pwd`/files/.* | while read f; do
+LINK_FILE_DIR="`pwd`/files"
+ls -1dA "$LINK_FILE_DIR/bin" $LINK_FILE_DIR/.* | while read f; do
   [ "$f" == `pwd`/files/. ] ||
   [ "$f" == `pwd`/files/.. ] ||
   [ "$f" == `pwd`/files/.git ] ||
   ln -vsf "$f" ~
 done
+
+mkdir -p ~/.ssh/
+ln -vsf "$LINK_FILE_DIR/ssh_config" ~/.ssh/config
 
 if [ ! `which brew` ]; then
   echo "--> installing homebrew"
