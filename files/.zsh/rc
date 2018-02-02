@@ -55,3 +55,5 @@ export GOPATH=$HOME/Development/go_workspace
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN:$GOROOT/bin
 
+# python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
