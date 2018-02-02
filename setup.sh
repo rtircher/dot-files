@@ -73,7 +73,8 @@ EXTENSIONS=(
   "michelemelluso.code-beautifier" \
   "octref.vetur" \
   "rebornix.Ruby" \
-  "taichi.react-beautify"
+  "taichi.react-beautify" \
+  "PeterJausovec.vscode-docker"
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do
