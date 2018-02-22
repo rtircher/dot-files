@@ -32,3 +32,5 @@ alias t='title'
 alias vsc='open -a "Visual Studio Code"'
 
 alias stree='open -a SourceTree .'
+
+alias dc='docker-compose'
