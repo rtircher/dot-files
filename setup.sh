@@ -74,6 +74,8 @@ EXTENSIONS=(
   "octref.vetur" \
   "rebornix.Ruby" \
   "taichi.react-beautify" \
+  "mauve.terraform" \
+  "streetsidesoftware.code-spell-checker" \
   "PeterJausovec.vscode-docker"
 )
 echo "  Installing VS Code extensions"
