@@ -56,4 +56,4 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN:$GOROOT/bin
 
 # python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="$(pyenv root)/shims:$PATH"
