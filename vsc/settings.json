@@ -16,7 +16,8 @@
         "**/.DS_Store": true
     },
     "files.associations": {
-        "*.vue": "vue"
+        "*.vue": "vue",
+        ".env": "shellscript"
     },
     "ruby.lint": {
         "reek": true,
@@ -37,8 +38,19 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
     },
-    "workbench.editor.tabSizing": "shrink"
+    "workbench.editor.tabSizing": "shrink",
+    "[plaintext]": {},
+    "gitlens.gitExplorer.files.layout": "auto",
+    "cSpell.userWords": [
+        "jira",
+        "nutonomy",
+        "renaud"
+    ],
+    "gitlens.keymap": "chorded",
+    "go.inferGopath": true
 }
