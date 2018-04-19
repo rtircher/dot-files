@@ -6,3 +6,4 @@ brew install git
 brew install git-lfs
 brew install terraform
 brew install pyenv
+brew install pyenv-virtualenv

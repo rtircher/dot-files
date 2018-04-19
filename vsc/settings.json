@@ -52,5 +52,9 @@
         "renaud"
     ],
     "gitlens.keymap": "chorded",
-    "go.inferGopath": true
+    "go.inferGopath": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120"
+    ]
 }
