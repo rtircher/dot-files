@@ -4,18 +4,9 @@ alias ga='git add'
 alias gap='ga -p'
 alias gau='git add -u'
 alias gbr='git branch -v'
-gc() {
-  git diff --cached | grep '\btap[ph]\b' >/dev/null &&
-    echo "\e[0;31;29mOops, there's a #tapp or similar in that diff.\e[0m" ||
-    git commit -v "$@"
-}
-alias gc!='git commit -v'
-alias gca='git commit -v -a'
-alias gcam='gca --amend'
 alias gch='git cherry-pick'
 alias gcm='git commit -v --amend'
 alias gco='git checkout'
-alias gcop='gco -p'
 alias gd='git diff -M'
 alias gd.='git diff -M --color-words="."'
 alias gdc='git diff --cached -M'
@@ -58,12 +49,13 @@ alias grod='g fetch origin develop && git rebase origin/develop'
 alias gpsu='git push --set-upstream'
 alias gpsuo='git push --set-upstream origin'
 alias gsr='git svn rebase'
-gupstation() {
-  gup
-  gf production
-  gf staging
-}
 alias graf='git remote add $argv[1] $argv[2] && gf $argv[1]'
 
 alias master='gco master'
 alias develop='gco develop'
+
+function gprune {
+  git remote prune origin
+  # git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+  git branch -r | awk '{print $1}' | grep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D
+}
