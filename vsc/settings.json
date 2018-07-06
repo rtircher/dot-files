@@ -13,7 +13,8 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/__pycache__": true
     },
     "files.associations": {
         "*.vue": "vue",
@@ -45,16 +46,24 @@
     },
     "workbench.editor.tabSizing": "shrink",
     "[plaintext]": {},
-    "gitlens.gitExplorer.files.layout": "auto",
     "cSpell.userWords": [
         "jira",
+        "mqtt",
         "nutonomy",
-        "renaud"
+        "renaud",
+        "serverless",
+        "terraform",
+        "upgrader"
     ],
     "gitlens.keymap": "chorded",
     "go.inferGopath": true,
     "python.formatting.autopep8Args": [
         "--max-line-length",
         "120"
-    ]
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "off",
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.historyExplorer.enabled": true,
+    "C_Cpp.formatting": "Disabled"
 }
