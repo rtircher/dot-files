@@ -59,3 +59,5 @@ export PATH=$PATH:$GOBIN:$GOROOT/bin
 export PATH="$(pyenv root)/shims:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export PATH=~/.local/bin:$PATH
