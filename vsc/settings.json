@@ -65,5 +65,6 @@
     "files.autoSave": "off",
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.historyExplorer.enabled": true,
-    "C_Cpp.formatting": "Disabled"
+    "C_Cpp.formatting": "Disabled",
+    "cSpell.language": "en"
 }

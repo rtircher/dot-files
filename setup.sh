@@ -56,6 +56,10 @@ fi
 echo "--> installing cask packages"
 source Caskfile
 
+echo "--> Installing aws tools"
+pip install awscli --upgrade --user
+pip install aws2fa awslogs
+
 echo "--> link Visual Studio Code config"
 VSC_SUPPORT_DIR="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSC_SUPPORT_DIR"
@@ -64,19 +68,22 @@ ls -1dA `pwd`/vsc/* | while read f; do
 done
 
 EXTENSIONS=(
-  "HookyQR.beautify" \
+  "arjun.swagger-viewer" \
+  "castwide.solargraph" \
   "dbaeumer.vscode-eslint" \
   "eamodio.gitlens" \
   "esbenp.prettier-vscode" \
+  "HookyQR.beautify" \
   "karunamurti.haml" \
   "lukehoban.Go" \
-  "michelemelluso.code-beautifier" \
-  "octref.vetur" \
-  "rebornix.Ruby" \
-  "taichi.react-beautify" \
   "mauve.terraform" \
+  "michelemelluso.code-beautifier" \
+  "ms-python.python" \
+  "octref.vetur" \
+  "PeterJausovec.vscode-docker" \
+  "rebornix.Ruby" \
   "streetsidesoftware.code-spell-checker" \
-  "PeterJausovec.vscode-docker"
+  "taichi.react-beautify"
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do
