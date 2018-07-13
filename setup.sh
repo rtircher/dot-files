@@ -58,7 +58,7 @@ source Caskfile
 
 echo "--> Installing aws tools"
 pip install awscli --upgrade --user
-pip install aws2fa awslogs
+pip install aws-mfa awslogs
 
 echo "--> link Visual Studio Code config"
 VSC_SUPPORT_DIR="$HOME/Library/Application Support/Code/User"

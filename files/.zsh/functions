@@ -1,3 +1,7 @@
 function title {
   printf "\033]0;%s\007" "$*"
 }
+
+function amfa {
+  ykman oath code -s ${1} | aws-mfa --profile ${1} --force
+}
