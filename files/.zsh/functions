@@ -5,3 +5,7 @@ function title {
 function amfa {
   ykman oath code -s ${1} | aws-mfa --profile ${1} --force
 }
+
+function alogs {
+  awslogs get ${1} ALL --profile ${2} --aws-region ${3} -s2d --watch
+}
