@@ -7,5 +7,5 @@ function amfa {
 }
 
 function alogs {
-  awslogs get ${1} ALL --profile ${2} --aws-region ${3} -s2d --watch
+  awslogs get ${1} ALL --profile ${2} --aws-region ${3} -s15m --watch
 }
