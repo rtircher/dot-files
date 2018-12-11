@@ -9,6 +9,9 @@ vendor/cache/
 .vagrant/
 *.ipr
 *.iws
+.classpath
+.project
+.settings/
 /bin/
 /venv/
 .vscode/
