@@ -45,7 +45,6 @@
         "suppressWelcomeNotice": true
     },
     "workbench.editor.tabSizing": "shrink",
-    "[plaintext]": {},
     "cSpell.userWords": [
         "jira",
         "mqtt",
@@ -62,9 +61,19 @@
         "120"
     ],
     "explorer.confirmDragAndDrop": false,
-    "files.autoSave": "off",
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.historyExplorer.enabled": true,
     "C_Cpp.formatting": "Disabled",
-    "cSpell.language": "en"
+    "cSpell.language": "en",
+    "python.autoComplete.addBrackets": true,
+    "python.pythonPath": "/Users/rtircher/.pyenv/versions/3.6.5/bin/python",
+    "githubPullRequests.hosts": [{
+        "host": "https://github.com",
+        "username": "oauth",
+        "token": "system"
+    }
+],
+"gitlens.views.repositories.files.layout": "auto",
+"gitlens.views.fileHistory.enabled": true,
+"gitlens.views.lineHistory.enabled": true,
 }
