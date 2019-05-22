@@ -67,13 +67,17 @@
     "cSpell.language": "en",
     "python.autoComplete.addBrackets": true,
     "python.pythonPath": "/Users/rtircher/.pyenv/versions/3.6.5/bin/python",
-    "githubPullRequests.hosts": [{
-        "host": "https://github.com",
-        "username": "oauth",
-        "token": "system"
-    }
-],
-"gitlens.views.repositories.files.layout": "auto",
-"gitlens.views.fileHistory.enabled": true,
-"gitlens.views.lineHistory.enabled": true,
+    "gitlens.views.repositories.files.layout": "auto",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": true,
+    "python.autoUpdateLanguageServer": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
 }
