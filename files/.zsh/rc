@@ -60,3 +60,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 export PATH=~/.local/bin:$PATH
+
+# newer make
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"

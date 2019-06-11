@@ -8,3 +8,4 @@ brew install terraform
 brew install pyenv
 brew install pyenv-virtualenv
 brew install ykman
+brew install make
