@@ -1,3 +1,6 @@
+# Install cask
+brew tap homebrew/cask-cask
+
 # Quick Look plugins
 brew cask install qlcolorcode
 brew cask install qlmarkdown
