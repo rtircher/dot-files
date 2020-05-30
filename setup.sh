@@ -30,21 +30,21 @@ else
   echo "RVM already installed -- skipping"
 fi
 
-echo "--> installing emacs"
-brew install emacs --cocoa --srgb --keep-ctag
+# echo "--> installing emacs"
+# brew install emacs --cocoa --srgb --keep-ctag
 
-EMACS_BIN="/usr/local/bin/`readlink /usr/local/bin/emacs`"
-EMACS_HOME="`dirname $EMACS_BIN`/.."
-EMACS_APP="$EMACS_HOME/Emacs.app"
+# EMACS_BIN="/usr/local/bin/`readlink /usr/local/bin/emacs`"
+# EMACS_HOME="`dirname $EMACS_BIN`/.."
+# EMACS_APP="$EMACS_HOME/Emacs.app"
 
-echo "  changing emacs icon"
-mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
-cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
+# echo "  changing emacs icon"
+# mv $EMACS_APP/Contents/Resources/Emacs.icns $EMACS_APP/Contents/Resources/Emacs.old.icns
+# cp bin/Emacs.icns $EMACS_APP/Contents/Resources/
 
-echo "  copying emacs to /Applications"
-cp -r $EMACS_APP /Applications/Emacs.app
+# echo "  copying emacs to /Applications"
+# cp -r $EMACS_APP /Applications/Emacs.app
 
-echo "Emacs installed successfully"
+# echo "Emacs installed successfully"
 
 echo "--> Changing shel to zsh"
 if [ "$SHELL" == '/bin/zsh' ]; then
