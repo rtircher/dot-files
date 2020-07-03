@@ -56,6 +56,10 @@ fi
 echo "--> installing cask packages"
 source Caskfile
 
+echo "--> Installing pyton"
+pyenv install 3.8.3
+pyenv global system 3.8.3
+
 echo "--> Installing aws tools"
 pip install awscli --upgrade --user
 pip install aws-mfa awslogs
@@ -73,9 +77,9 @@ EXTENSIONS=(
   "dbaeumer.vscode-eslint" \
   "eamodio.gitlens" \
   "esbenp.prettier-vscode" \
+  "golang.go" \
   "HookyQR.beautify" \
   "karunamurti.haml" \
-  "lukehoban.Go" \
   "mauve.terraform" \
   "michelemelluso.code-beautifier" \
   "ms-python.python" \

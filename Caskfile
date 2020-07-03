@@ -1,6 +1,3 @@
-# Install cask
-brew tap caskroom/cask
-
 # Quick Look plugins
 brew cask install qlcolorcode
 brew cask install qlmarkdown
@@ -11,21 +8,20 @@ brew cask install qlstephen # preview file without extensions as text files
 
 # Apps
 brew cask install iterm2
-brew cask install sourcetree
+# brew cask install sourcetree
 brew cask install alfred
-brew cask install caffeine
 brew cask install dropbox
 brew cask install firefox
-brew cask install fluid
-brew cask install flux
+# brew cask install fluid
+# brew cask install flux
 brew cask install google-chrome
 brew cask install notational-velocity
-brew cask install netshade
 brew cask install skype
 brew cask install slack
 brew cask install spectacle
-brew cask install virtualbox
+# brew cask install virtualbox
 brew cask install vlc
-brew cask install vagrant
+# brew cask install vagrant
 brew cask install visual-studio-code
 brew cask install docker
+brew cask install fork

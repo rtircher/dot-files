@@ -80,4 +80,5 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
+    "gitlens.advanced.telemetry.enabled": false,
 }
