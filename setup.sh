@@ -61,8 +61,8 @@ pyenv install 3.8.3
 pyenv global system 3.8.3
 
 echo "--> Installing aws tools"
-pip install awscli --upgrade --user
-pip install aws-mfa awslogs
+pip install --upgrade pip
+pip install awscli aws-mfa awslogs --upgrade --user
 
 echo "--> link Visual Studio Code config"
 VSC_SUPPORT_DIR="$HOME/Library/Application Support/Code/User"
