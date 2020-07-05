@@ -1,84 +1,83 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.tabSize": 2,
-    "editor.roundedSelection": false,
-    "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.roundedSelection": false,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "alt",
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "go.formatTool": "goreturns",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/__pycache__": true
+  },
+  "files.associations": {
+    "*.vue": "vue",
+    ".env": "shellscript"
+  },
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": true, //Runs ruby -wc
+    "fasterer": true,
+    "debride": true,
+    "ruby-lint": true
+  },
+  "workbench.iconTheme": "vs-seti",
+  "window.zoomLevel": 0,
+  "prettier.printWidth": 110,
+  "prettier.singleQuote": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": true
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "cSpell.userWords": ["jira", "mqtt", "nutonomy", "renaud", "serverless", "terraform", "upgrader"],
+  "gitlens.keymap": "chorded",
+  "go.inferGopath": true,
+  "python.formatting.autopep8Args": ["--max-line-length", "120"],
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.gitExplorer.files.layout": "auto",
+  "gitlens.historyExplorer.enabled": true,
+  "C_Cpp.formatting": "Disabled",
+  "cSpell.language": "en",
+  "python.autoComplete.addBrackets": true,
+  "python.pythonPath": "/Users/rtircher/.pyenv/versions/3.6.5/bin/python",
+  "gitlens.views.repositories.files.layout": "auto",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": true,
+  "python.autoUpdateLanguageServer": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "gitlens.advanced.telemetry.enabled": false,
+  "[dart]": {
     "editor.formatOnSave": true,
-    "editor.multiCursorModifier": "alt",
-    "files.trimTrailingWhitespace": true,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "go.formatTool": "goreturns",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/__pycache__": true
-    },
-    "files.associations": {
-        "*.vue": "vue",
-        ".env": "shellscript"
-    },
-    "ruby.lint": {
-        "reek": true,
-        "rubocop": true,
-        "ruby": true, //Runs ruby -wc
-        "fasterer": true,
-        "debride": true,
-        "ruby-lint": true
-    },
-    "workbench.iconTheme": "vs-seti",
-    "window.zoomLevel": 0,
-    "prettier.printWidth": 110,
-    "prettier.singleQuote": true,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": true,
-        "suppressWelcomeNotice": true
-    },
-    "workbench.editor.tabSizing": "shrink",
-    "cSpell.userWords": [
-        "jira",
-        "mqtt",
-        "nutonomy",
-        "renaud",
-        "serverless",
-        "terraform",
-        "upgrader"
-    ],
-    "gitlens.keymap": "chorded",
-    "go.inferGopath": true,
-    "python.formatting.autopep8Args": [
-        "--max-line-length",
-        "120"
-    ],
-    "explorer.confirmDragAndDrop": false,
-    "gitlens.gitExplorer.files.layout": "auto",
-    "gitlens.historyExplorer.enabled": true,
-    "C_Cpp.formatting": "Disabled",
-    "cSpell.language": "en",
-    "python.autoComplete.addBrackets": true,
-    "python.pythonPath": "/Users/rtircher/.pyenv/versions/3.6.5/bin/python",
-    "gitlens.views.repositories.files.layout": "auto",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [120],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": true,
-    "python.autoUpdateLanguageServer": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "gitlens.advanced.telemetry.enabled": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  }
 }
