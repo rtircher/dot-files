@@ -2,6 +2,7 @@ function project_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/" \
                   -e "s/~\/Development\/\([^\/]*\)/\\1/" \
                   -e "s/\/Development\/\([^\/]*\)/\\1/" \
+                  -e "s/twoboredmen\/\([^\/]*\)/\\1/" \
                   -e "s/src\/github.com\/nutonomy\/\([^\/]*\)/\\1/"
 }
 
@@ -11,17 +12,16 @@ function rvm_prompt_info() {
 }
 
 function ruby_version() {
-  ruby_version=$(rvm_prompt_info | sed -e "s/ruby/rb/")
+  ruby_version=$(rvm_prompt_info | sed -e "s/ruby-/rb:/")
   if [ -z ${ruby_version} ] ; then
-     print "rb-system"
+     print "rb:system"
   else
      print "${ruby_version}"
   fi
 }
 
 function python_version() {
-  python_version=$(pyenv version | cut -d' ' -f1)
-  print "py-${python_version}"
+  print py:${(j.,.)$(pyenv version | cut -d' ' -f1)}
 }
 
 function color_based_on_success_of_last_cmd() {

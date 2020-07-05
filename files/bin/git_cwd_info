@@ -8,7 +8,7 @@ function in_git_repo() {
 }
 
 function git_parse_branch() {
-  local branch_name=$(cat $git_repo_path/HEAD | grep -Eo "refs/heads/(.*)" | cut -d/ -f3)
+  local branch_name=$(cat $git_repo_path/HEAD | grep -Eo "refs/heads/(.*)" | sed -e "s/refs\/heads\///")
   if [[ -z $branch_name ]]; then
     print "${color_red}no branch"
   else
