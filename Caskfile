@@ -1,31 +1,27 @@
-# Install cask
-brew tap homebrew/cask-cask
-
 # Quick Look plugins
-brew cask install qlcolorcode
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install quicklook-csv
-brew cask install betterzip
-brew cask install qlstephen # preview file without extensions as text files
+brew cask install \
+  qlcolorcode \
+  qlmarkdown \
+  quicklook-json \
+  quicklook-csv \
+  betterzip \
+  qlstephen # preview file without extensions as text files
 
 # Apps
-brew cask install iterm2
-# brew cask install sourcetree
-brew cask install alfred
-brew cask install dropbox
-brew cask install firefox
-# brew cask install fluid
-# brew cask install flux
-brew cask install google-chrome
-brew cask install notational-velocity
-brew cask install skype
-brew cask install slack
-brew cask install spectacle
-# brew cask install virtualbox
-brew cask install vlc
-# brew cask install vagrant
-brew cask install visual-studio-code
-brew cask install docker
-brew cask install fork
-brew cask install gpg-suite
+brew cask install \
+  alfred \
+  docker \
+  dropbox \
+  firefox \
+  fluid \
+  fork \
+  google-chrome \
+  gpg-suite
+  iterm2 \
+  notational-velocity \
+  skype \
+  slack \
+  spectacle \
+  virtualbox \
+  visual-studio-code \
+  vlc

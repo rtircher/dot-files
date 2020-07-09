@@ -20,6 +20,9 @@ else
   echo "Homebrew already installed -- skipping"
 fi
 
+# if running on old install and to avoid errors when installing existing brew package, we upgrade first
+brew upgrade
+
 echo "--> installing brew packages"
 source Brewfile
 
@@ -80,14 +83,13 @@ EXTENSIONS=(
   "golang.go" \
   "HookyQR.beautify" \
   "karunamurti.haml" \
-  "mauve.terraform" \
+  "hashicorp.terraform" \
   "michelemelluso.code-beautifier" \
   "ms-python.python" \
   "octref.vetur" \
-  "PeterJausovec.vscode-docker" \
+  "ms-azuretools.vscode-docker" \
   "rebornix.Ruby" \
-  "streetsidesoftware.code-spell-checker" \
-  "taichi.react-beautify"
+  "streetsidesoftware.code-spell-checker"
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do

@@ -1,12 +1,13 @@
-brew install ack
-brew install node
-brew install zsh
-brew install aspell
-brew install git
-brew install git-lfs
-brew install terraform
-brew install pyenv
-brew install pyenv-virtualenv
-brew install ykman
-brew install make
-brew install gpg
+brew install \
+  ack \
+  node \
+  zsh \
+  aspell \
+  git \
+  git-lfs \
+  terraform \
+  pyenv \
+  pyenv-virtualenv \
+  ykman \
+  make \
+  gpg
