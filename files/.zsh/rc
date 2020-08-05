@@ -65,3 +65,5 @@ export PATH=~/.local/bin:$PATH
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 export GPG_TTY=$(tty)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

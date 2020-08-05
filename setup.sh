@@ -99,5 +99,8 @@ done
 echo "--> link iTerm2 config"
 ln -vsf "`pwd`/iterm2/dynamic-profiles.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
+echo "--> setup fzf"
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
+
 echo "--> Configuring OSX"
 source osx_config.sh

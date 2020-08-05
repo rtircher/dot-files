@@ -9,6 +9,6 @@ brew install \
   node \
   pyenv \
   pyenv-virtualenv \
-  terraform \
+  tfenv \
   ykman \
   zsh
