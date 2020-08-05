@@ -1,13 +1,14 @@
 brew install \
   ack \
-  node \
-  zsh \
   aspell \
+  fzf \
   git \
   git-lfs \
-  terraform \
+  gpg \
+  make \
+  node \
   pyenv \
   pyenv-virtualenv \
+  terraform \
   ykman \
-  make \
-  gpg
+  zsh

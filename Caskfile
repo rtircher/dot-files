@@ -11,6 +11,7 @@ brew cask install \
 brew cask install \
   alfred \
   docker \
+  drawio \
   dropbox \
   firefox \
   fluid \
@@ -19,6 +20,7 @@ brew cask install \
   gpg-suite
   iterm2 \
   notational-velocity \
+  onedrive \
   skype \
   slack \
   spectacle \
