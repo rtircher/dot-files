@@ -18,7 +18,8 @@
   },
   "files.associations": {
     "*.vue": "vue",
-    ".env": "shellscript"
+    ".env": "shellscript",
+    "*.flr": "json"
   },
   "ruby.lint": {
     "reek": true,
