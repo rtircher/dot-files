@@ -50,9 +50,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 # Go stuffs
-export GOPATH=$HOME/Development
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # python
 export PATH="$(pyenv root)/shims:$PATH"
