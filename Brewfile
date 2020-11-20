@@ -1,6 +1,7 @@
 brew install \
   ack \
   aspell \
+  direnv \
   fzf \
   git \
   git-lfs \

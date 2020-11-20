@@ -77,19 +77,21 @@ done
 EXTENSIONS=(
   "arjun.swagger-viewer" \
   "castwide.solargraph" \
+  "cschleiden.vscode-github-actions" \
   "dbaeumer.vscode-eslint" \
   "eamodio.gitlens" \
   "esbenp.prettier-vscode" \
+  "gimenete.github-linker" \
   "golang.go" \
+  "hashicorp.terraform" \
   "HookyQR.beautify" \
   "karunamurti.haml" \
-  "hashicorp.terraform" \
   "michelemelluso.code-beautifier" \
+  "ms-azuretools.vscode-docker" \
   "ms-python.python" \
   "octref.vetur" \
-  "ms-azuretools.vscode-docker" \
   "rebornix.Ruby" \
-  "streetsidesoftware.code-spell-checker"
+  "streetsidesoftware.code-spell-checker" \
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do
