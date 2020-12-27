@@ -15,3 +15,4 @@ vendor/cache/
 /bin/
 /venv/
 .vscode/
+.envrc
