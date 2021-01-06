@@ -1,5 +1,5 @@
 # Quick Look plugins
-brew cask install \
+brew install --cask \
   qlcolorcode \
   qlmarkdown \
   quicklook-json \
@@ -8,8 +8,9 @@ brew cask install \
   qlstephen # preview file without extensions as text files
 
 # Apps
-brew cask install \
+brew install --cask \
   alfred \
+  aws-vault \
   docker \
   drawio \
   dropbox \
@@ -24,6 +25,5 @@ brew cask install \
   skype \
   slack \
   spectacle \
-  virtualbox \
   visual-studio-code \
   vlc
