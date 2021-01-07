@@ -1,6 +1,5 @@
 # Quick Look plugins
 brew install --cask \
-  qlcolorcode \
   qlmarkdown \
   quicklook-json \
   quicklook-csv \
