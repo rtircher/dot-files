@@ -8,7 +8,6 @@
   "files.trimTrailingWhitespace": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "go.formatTool": "goreturns",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -46,9 +45,21 @@
     "suppressWelcomeNotice": true
   },
   "workbench.editor.tabSizing": "shrink",
-  "cSpell.userWords": ["jira", "mqtt", "nutonomy", "renaud", "serverless", "terraform", "upgrader"],
+  "cSpell.userWords": [
+    "CLOUDSDK",
+    "OHLVC",
+    "TBMX",
+    "jira",
+    "mqtt",
+    "nolint",
+    "nutonomy",
+    "pnls",
+    "renaud",
+    "serverless",
+    "terraform",
+    "upgrader"
+  ],
   "gitlens.keymap": "chorded",
-  "go.inferGopath": true,
   "python.formatting.autopep8Args": ["--max-line-length", "120"],
   "explorer.confirmDragAndDrop": false,
   "gitlens.gitExplorer.files.layout": "auto",
@@ -80,5 +91,9 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
-}
+  },
+  "go.formatTool": "goimports",
+  "go.testTimeout": "2s",
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true
 }
