@@ -65,9 +65,11 @@ export GPG_TTY=$(tty)
 # Flutter
 export PATH="$PATH:$HOME/Development/flutter/bin" # Add Flutter to PATH
 
-# The next line updates PATH for the Google Cloud SDK.
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+# The next lines updates PATH for the Google Cloud SDK.
+if [ -s "/usr/local/Caskroom/google-cloud-sdk/" ]; then
+  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
 
 export DOCKER_BUILDKIT=1
 
