@@ -99,6 +99,7 @@ for EXTENSION in ${EXTENSIONS[@]}; do
 done
 
 echo "--> link iTerm2 config"
+mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 ln -vsf "`pwd`/iterm2/dynamic-profiles.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
 echo "--> setup fzf"
