@@ -60,8 +60,8 @@ echo "--> installing cask packages"
 source Caskfile
 
 echo "--> Installing pyton"
-pyenv install 3.8.3
-pyenv global system 3.8.3
+pyenv install -s 3.10.4
+pyenv global system 3.10.4
 
 echo "--> Installing aws tools"
 pip install --upgrade pip
