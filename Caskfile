@@ -17,7 +17,6 @@ brew install --cask \
   fluid \
   fork \
   google-chrome \
-  gpg-suite
   iterm2 \
   notational-velocity \
   onedrive \
