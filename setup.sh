@@ -55,6 +55,9 @@ if [ "$SHELL" == '/bin/zsh' ]; then
 else
   chsh -s /bin/zsh $USER
 fi
+if [[ ! -a /usr/local/bin/zsh ]]; then
+  sudo ln -s /bin/zsh /usr/local/bin
+fi
 
 echo "--> installing cask packages"
 source Caskfile
