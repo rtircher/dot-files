@@ -15,7 +15,7 @@ ln -vsf "$LINK_FILE_DIR/ssh_config" ~/.ssh/config
 
 if [ ! `which brew` ]; then
   echo "--> installing homebrew"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "Homebrew already installed -- skipping"
 fi
@@ -49,7 +49,7 @@ fi
 
 # echo "Emacs installed successfully"
 
-echo "--> Changing shel to zsh"
+echo "--> Changing shell to zsh"
 if [ "$SHELL" == '/bin/zsh' ]; then
   echo "Already using zsh -- shipping"
 else
