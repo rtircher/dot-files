@@ -13,6 +13,8 @@ if [ $(uname -s) = 'Darwin' ]; then
 fi
 export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
+ttyctl -f
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
