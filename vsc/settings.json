@@ -47,15 +47,16 @@
   "workbench.editor.tabSizing": "shrink",
   "cSpell.userWords": [
     "CLOUDSDK",
-    "OHLVC",
-    "TBMX",
     "jira",
+    "LTRB",
     "mqtt",
     "nolint",
     "nutonomy",
+    "OHLVC",
     "pnls",
     "renaud",
     "serverless",
+    "TBMX",
     "terraform",
     "upgrader"
   ],
@@ -95,5 +96,17 @@
   "go.formatTool": "goimports",
   "go.testTimeout": "2s",
   "go.coverOnSingleTest": true,
-  "go.coverOnSingleTestFile": true
+  "go.coverOnSingleTestFile": true,
+  "redhat.telemetry.enabled": false,
+  "leetcode.workspaceFolder": "/Users/rtircher/Development/Leetcode",
+  "leetcode.defaultLanguage": "golang",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.commandShortcut": false,
+  "go.toolsManagement.autoUpdate": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.languageServer": "Jedi",
+  "workbench.colorTheme": "Default Dark+",
+  "dart.openDevTools": "flutter",
+  "workbench.sideBar.location": "right"
 }
