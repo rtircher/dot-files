@@ -20,6 +20,8 @@ else
   echo "Homebrew already installed -- skipping"
 fi
 
+# Ensure analytics are off
+brew analytics off
 # if running on old install and to avoid errors when installing existing brew package, we upgrade first
 brew upgrade
 
@@ -87,7 +89,6 @@ EXTENSIONS=(
   "gimenete.github-linker" \
   "golang.go" \
   "hashicorp.terraform" \
-  "HookyQR.beautify" \
   "karunamurti.haml" \
   "michelemelluso.code-beautifier" \
   "ms-azuretools.vscode-docker" \
