@@ -57,8 +57,10 @@ if [ "$SHELL" == '/bin/zsh' ]; then
 else
   chsh -s /bin/zsh $USER
 fi
-if [[ ! -a /usr/local/bin/zsh ]]; then
-  sudo ln -s /bin/zsh /usr/local/bin
+
+# Ensure we still have the homebrew utilities in /usr/local/bin in Apple silicon
+if [[ ! -a /usr/local/bin/ ]]; then
+  sudo ln -s /opt/homebrew/bin /usr/local/bin
 fi
 
 echo "--> installing cask packages"
