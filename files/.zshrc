@@ -52,6 +52,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Go stuffs
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH":"$(go env GOPATH)/bin"
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
