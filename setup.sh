@@ -83,20 +83,33 @@ done
 
 EXTENSIONS=(
   "arjun.swagger-viewer" \
+  "BendixMa.dart-data-class-generator" \
   "castwide.solargraph" \
+  "Dart-Code.dart-code" \
+  "Dart-Code.flutter" \
   "dbaeumer.vscode-eslint" \
   "eamodio.gitlens" \
   "esbenp.prettier-vscode" \
+  "Flutterbricksproductions.flutterbricks" \
   "gimenete.github-linker" \
+  "gmlewis-vscode.flutter-stylizer" \
   "golang.go" \
   "hashicorp.terraform" \
   "karunamurti.haml" \
+  "LeetCode.vscode-leetcode" \
+  "mechatroner.rainbow-csv" \
   "michelemelluso.code-beautifier" \
   "ms-azuretools.vscode-docker" \
+  "ms-python.isort" \
   "ms-python.python" \
+  "ms-python.vscode-pylance" \
+  "ms-vscode.makefile-tools" \
+  "Nash.awesome-flutter-snippets" \
   "octref.vetur" \
   "rebornix.Ruby" \
+  "redhat.vscode-yaml" \
   "streetsidesoftware.code-spell-checker" \
+  "wingrunr21.vscode-ruby" \
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do
