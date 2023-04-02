@@ -83,7 +83,6 @@ done
 
 EXTENSIONS=(
   "arjun.swagger-viewer" \
-  "BendixMa.dart-data-class-generator" \
   "castwide.solargraph" \
   "Dart-Code.dart-code" \
   "Dart-Code.flutter" \
@@ -113,7 +112,7 @@ EXTENSIONS=(
 )
 echo "  Installing VS Code extensions"
 for EXTENSION in ${EXTENSIONS[@]}; do
-  code --install-extension $EXTENSION
+  code --install-extension $EXTENSION --force
 done
 
 echo "--> link iTerm2 config"
