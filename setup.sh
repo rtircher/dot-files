@@ -84,7 +84,6 @@ done
 EXTENSIONS=(
   "arjun.swagger-viewer" \
   "castwide.solargraph" \
-  "cschleiden.vscode-github-actions" \
   "dbaeumer.vscode-eslint" \
   "eamodio.gitlens" \
   "esbenp.prettier-vscode" \
