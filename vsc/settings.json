@@ -8,6 +8,7 @@
   "files.trimTrailingWhitespace": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -108,5 +109,6 @@
   "python.languageServer": "Jedi",
   "workbench.colorTheme": "Default Dark+",
   "dart.openDevTools": "flutter",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "editor.inlineSuggest.enabled": true
 }
