@@ -73,6 +73,7 @@ pyenv global system 3.10.4
 echo "--> Installing aws tools"
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
+rm AWSCLIV2.pkg
 
 echo "--> link Visual Studio Code config"
 VSC_SUPPORT_DIR="$HOME/Library/Application Support/Code/User"
