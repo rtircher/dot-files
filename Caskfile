@@ -15,6 +15,7 @@ brew install --cask \
   fork \
   google-chrome \
   iterm2 \
+  orbstack \
   slack \
   spectacle \
   visual-studio-code \
