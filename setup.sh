@@ -30,7 +30,7 @@ source Brewfile
 
 if  [ ! `which rvm` ]; then
   echo "--> installing RVM"
-  curl -L get.rvm.io | bash -s stable --ruby
+  curl -sSL https://get.rvm.io | bash -s stable
 else
   echo "RVM already installed -- skipping"
 fi

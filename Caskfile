@@ -3,22 +3,18 @@ brew install --cask \
   qlmarkdown \
   quicklook-json \
   quicklook-csv \
-  betterzip \
-  qlstephen # preview file without extensions as text files
+  betterzip
 
 # Apps
 brew install --cask \
   alfred \
   aws-vault \
-  docker \
-  drawio \
   dropbox \
   firefox \
-  fluid \
+  flutter \
   fork \
   google-chrome \
   iterm2 \
-  notational-velocity \
   slack \
   spectacle \
   visual-studio-code \

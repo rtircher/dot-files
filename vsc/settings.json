@@ -30,9 +30,7 @@
     "ruby-lint": true
   },
   "workbench.iconTheme": "vs-seti",
-  "window.zoomLevel": 0,
   "prettier.printWidth": 110,
-  "prettier.singleQuote": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -47,7 +45,9 @@
   },
   "workbench.editor.tabSizing": "shrink",
   "cSpell.userWords": [
+    "autocorrect",
     "CLOUDSDK",
+    "deribit",
     "jira",
     "LTRB",
     "mqtt",
@@ -57,6 +57,7 @@
     "pnls",
     "renaud",
     "serverless",
+    "TBMT",
     "TBMX",
     "terraform",
     "upgrader"
@@ -87,7 +88,7 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [100],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -110,5 +111,12 @@
   "workbench.colorTheme": "Default Dark+",
   "dart.openDevTools": "flutter",
   "workbench.sideBar.location": "right",
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "dart.lineLength": 100
 }
