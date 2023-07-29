@@ -8,6 +8,7 @@ brew install \
   gpg \
   make \
   node \
+  orbstack \
   pyenv \
   pyenv-virtualenv \
   tfenv \
