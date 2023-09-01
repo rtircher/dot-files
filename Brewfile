@@ -1,6 +1,7 @@
 brew install \
   ack \
   aspell \
+  clang-format \
   direnv \
   fzf \
   git \
