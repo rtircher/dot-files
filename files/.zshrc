@@ -51,7 +51,8 @@ export HOMEBREW_NO_ANALYTICS=1
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Go stuffs
-export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.goenv/shims:"$PATH
+# export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH":"$(go env GOPATH)/bin"
 
 # python

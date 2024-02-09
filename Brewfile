@@ -5,6 +5,7 @@ brew install \
   fzf \
   git \
   git-lfs \
+  goenv \
   gpg \
   make \
   node \
