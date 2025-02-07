@@ -8,6 +8,8 @@ setopt hist_ignore_dups
 . ~/.zsh/functions
 . ~/.zsh/vendor/rupa-z/z.sh
 
+export LC_ALL=en_US.UTF-8
+
 if [ $(uname -s) = 'Darwin' ]; then
   export LANG="en_US.UTF-8"
 fi
@@ -85,3 +87,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(direnv hook zsh)"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

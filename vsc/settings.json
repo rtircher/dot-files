@@ -47,9 +47,12 @@
   "cSpell.userWords": [
     "autocorrect",
     "CLOUDSDK",
+    "cupertino",
     "deribit",
+    "instabug",
     "jira",
     "LTRB",
+    "Metarsit",
     "mqtt",
     "nolint",
     "nutonomy",
@@ -60,6 +63,7 @@
     "TBMT",
     "TBMX",
     "terraform",
+    "twoboredmen",
     "upgrader"
   ],
   "gitlens.keymap": "chorded",
@@ -93,7 +97,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "go.formatTool": "goimports",
   "go.testTimeout": "2s",
@@ -118,5 +122,36 @@
     "markdown": false,
     "scminput": false
   },
-  "dart.lineLength": 100
+  "dart.lineLength": 100,
+  "git.openRepositoryInParentFolders": "always",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[proto3]": {
+    "editor.defaultFormatter": "bufbuild.vscode-buf"
+  },
+  "snyk.trustedFolders": [
+    "/Users/renaud/Development/coinhako",
+    "/Users/renaud/Development/blog assets/simply-d4db39eec0e8197aea86d9f7a7775fb327687ca7",
+    "/Users/renaud/Development/infra",
+    "/Users/renaud/.superwallet"
+  ],
+  "snyk.yesWelcomeNotification": false,
+  "snyk.advanced.cliPath": "/Users/rtircher/Library/Application Support/snyk-ls/snyk-macos",
+  "editor.stickyScroll.enabled": true,
+  "aws.telemetry": false,
+  "editor.accessibilitySupport": "off",
+  "amazonQ.telemetry": false,
+  "snyk.folderConfigs": [
+    {
+      "folderPath": "/Users/renaud/Development/infra",
+      "baseBranch": "main",
+      "localBranches": ["main", "removing-haowei"]
+    }
+  ]
 }

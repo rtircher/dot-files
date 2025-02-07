@@ -1,3 +1,5 @@
+Include ~/.orbstack/ssh/config
+
 Host *
   UseKeychain yes
   AddKeysToAgent yes
@@ -17,6 +19,7 @@ IdentityFile ~/.ssh/id_rsa
 IdentityFile ~/.ssh/id_ed25519
 IdentityFile ~/.ssh/github-key
 IdentityFile ~/.ssh/clojar-ssh
+IdentityFile ~/.ssh/omnia-sg
 User rtircher
 ServerAliveInterval 5
 
@@ -27,4 +30,3 @@ ForwardAgent yes
 # And add the hosts that need the forwarding:
 # Host *.example.com
 #   ForwardAgent yes
-
